@@ -1,0 +1,9 @@
+<h2>PARENT COMPONENT</h2>
+
+<button (click)="toggleChild()">Toggle child</button>
+
+<input type="text" [(ngModel)]="name">
+
+<app-child *ngIf="isChild" [name]="name">
+    <h3 #parentContent>Welcome to Angular</h3>
+</app-child>
